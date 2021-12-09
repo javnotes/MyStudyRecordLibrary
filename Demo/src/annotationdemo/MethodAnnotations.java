@@ -49,9 +49,7 @@ public class MethodAnnotations {
                     System.out.println(defaultValue.annotationType().getSimpleName() + ":" + defaultValue.value());
                 }
             }
-
         }
-
 
     }
 }
