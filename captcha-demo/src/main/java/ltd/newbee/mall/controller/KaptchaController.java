@@ -31,7 +31,9 @@ public class KaptchaController {
         // 设置字体
         captcha.setCharType(Captcha.FONT_9);
 
-        // 验证码存入 session
+        // 验证码存入 session，session 数据存放在服务器上
+        // .getSession()返回与此请求关联的当前会话HttpSession，或者如果请求没有会话，则创建一个。
+        // .setAttribute()使用指定的名称将对象绑定到此会话。  如果同名对象已绑定到会话，则替换该对象。
         httpServletRequest.getSession().setAttribute("verifyCode", captcha.text().toLowerCase());
 
         // 输出图片流
