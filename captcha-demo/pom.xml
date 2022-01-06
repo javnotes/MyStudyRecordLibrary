@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ltd.newbee.mall</groupId>
-	<artifactId>newbee-mall</artifactId>
+	<artifactId>captcha-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>newbee-mall</name>
+	<name>captcha-demo</name>
 	<description>captcha-demo</description>
 
 	<properties>
