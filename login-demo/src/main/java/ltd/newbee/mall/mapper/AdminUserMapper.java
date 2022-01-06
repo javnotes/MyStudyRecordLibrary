@@ -1,4 +1,4 @@
-package ltd.newbee.mall.dao;
+package ltd.newbee.mall.mapper;
 
 import ltd.newbee.mall.entity.AdminUser;
 import org.apache.ibatis.annotations.Param;
@@ -8,13 +8,7 @@ public interface AdminUserMapper {
 
     int insertSelective(AdminUser record);
 
-    /**
-     * 登陆方法
-     *
-     * @param userName
-     * @param password
-     * @return
-     */
+    // 登陆方法
     AdminUser login(@Param("userName") String userName, @Param("password") String password);
 
     AdminUser selectByPrimaryKey(Integer adminUserId);

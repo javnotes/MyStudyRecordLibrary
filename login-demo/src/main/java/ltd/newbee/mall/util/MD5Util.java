@@ -8,7 +8,6 @@ public class MD5Util {
         StringBuffer resultSb = new StringBuffer();
         for (int i = 0; i < b.length; i++)
             resultSb.append(byteToHexString(b[i]));
-
         return resultSb.toString();
     }
 
@@ -27,11 +26,9 @@ public class MD5Util {
             resultString = new String(origin);
             MessageDigest md = MessageDigest.getInstance("MD5");
             if (charsetname == null || "".equals(charsetname))
-                resultString = byteArrayToHexString(md.digest(resultString
-                        .getBytes()));
+                resultString = byteArrayToHexString(md.digest(resultString.getBytes()));
             else
-                resultString = byteArrayToHexString(md.digest(resultString
-                        .getBytes(charsetname)));
+                resultString = byteArrayToHexString(md.digest(resultString.getBytes(charsetname)));
         } catch (Exception exception) {
         }
         return resultString;
