@@ -269,5 +269,24 @@ public String login(@RequestParam("userName") String userName,
   }
 }
 ```
+# 注意
+
+**注意Mapper 接口的路径**是与下面两处对应的：
+
+1. 使用 @MapperScan 修饰项目启动类
+
+```java
+@MapperScan("ltd.newbee.mall.mapper") //添加 @MapperScan 注解
+```
+
+2. 配置文件中配置
+
+```xml
+mybatis.mapper-locations=classpath:mapper/*Mapper.xml
+```
+
+
+
 # 参考链接
+
 [https://juejin.cn/book/6844733814074245133/section/6844733814141353991](https://juejin.cn/book/6844733814074245133/section/6844733814141353991)
