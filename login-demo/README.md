@@ -762,19 +762,13 @@ function validPasswordForUpdate(originalPassword, newPassword) {
 }
 ```
 
-
-
-
-
-
-
-
-
 ## 总结
 
 Controller 层的代码会接收前端传输过来的参数并做基本的参数判断，然后调用业务层的方法完成功能实现。
 
 业务层代码则做具体的逻辑处理，最后调用 Dao 层的方法并执行对应的 SQL 语句完成实际的入库操作。
 
+## 参考资料
 
+https://juejin.cn/book/6844733814074245133/section/6844733814141370381
 
