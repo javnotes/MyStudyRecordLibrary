@@ -61,6 +61,8 @@ public class AdminController {
 
 ## 设计登录用户表
 
+![image-20220203150016006](https://vuffy.oss-cn-shenzhen.aliyuncs.com/img/image-20220203150016006.png)
+
 ```Plain Text
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`newbee_mall_db ` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `newbee_mall_db `;
