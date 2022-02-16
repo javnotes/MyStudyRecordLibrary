@@ -13,13 +13,13 @@ import org.springframework.web.servlet.ModelAndView;
  * @author luf
  */
 @Controller
-@RequestMapping("userctrl")
+@RequestMapping("/userctrl")
 public class SysUserController {
 
     @Autowired
     SysUserService sysUserService;
 
-    @RequestMapping("page")
+    @RequestMapping("/page")
     public ModelAndView page(ModelAndView mav,@RequestParam(defaultValue="1")Integer pageNum,@RequestParam(defaultValue="8")Integer pageSize){
         PageInfo<SysUser> pageInfo = sysUserService.selectPage(pageNum, pageSize);
         mav.addObject("pi",pageInfo);//把集合装入模型数据

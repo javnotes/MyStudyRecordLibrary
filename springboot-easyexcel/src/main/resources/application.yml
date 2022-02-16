@@ -1,14 +1,15 @@
 #tomcat服务器配置 http://localhost:8080/excel
 server:
   address: localhost
-  port: 8080
+  port: 8095
   #字符编码设置
   servlet:
     encoding:
       charset: utf-8
       enabled: true
       force: true
-    context-path: /excel   #工程的站点根路径
+    #工程的站点根路径
+    context-path: /excel
 
 #配置视图解析器的前缀和后缀
 spring:
